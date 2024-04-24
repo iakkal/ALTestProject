@@ -11,9 +11,9 @@ codeunit 50100 APITestCodeunit
         JsonManagement: Codeunit "JSON Management";
         Response: Text;
         ResultVariant: Variant;
-        AccessKey: Label '77877c1abe1af7dc0b57e0d474cdbb5d';
     begin
-        if HttpClient.Get('https://apilayer.net/api/validate?access_key=' + AccessKey + '&number=' + PhoneNumber + '&country_code=&format=1',
+        GetAccessKey();
+        if HttpClient.Get('https://apilayer.net/api/validate?access_key=' + AccessKeySetup."Access Key" + '&number=' + PhoneNumber + '&country_code=&format=1',
             HttpResponseMessage) then begin
             HttpResponseMessage.Content.ReadAs(Response);
             JsonManagement.InitializeObject(Response);
@@ -40,4 +40,13 @@ codeunit 50100 APITestCodeunit
         end else
             Message('Status Code : %1\Reason : %2', HttpResponseMessage.HttpStatusCode, HttpResponseMessage.ReasonPhrase);
     end;
+
+    local procedure GetAccessKey()
+    begin
+        if AccessKeySetup.IsEmpty() then
+            AccessKeySetup.Get()
+    end;
+
+    var
+        AccessKeySetup: Record "Access Key Setup";
 }
