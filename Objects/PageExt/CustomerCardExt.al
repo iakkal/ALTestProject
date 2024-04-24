@@ -31,5 +31,4 @@ pageextension 50101 "Customer Card Extension" extends "Customer Card"
             }
         }
     }
-
 }
