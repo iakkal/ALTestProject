@@ -23,11 +23,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit APITestCodeunit - Method GetCatFact - NamedType Url</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1172425519 - Method 2098864933 - NamedType 2865678901" size-unit="char" translate="yes" xml:space="preserve">
-          <source>77877c1abe1af7dc0b57e0d474cdbb5d</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit APITestCodeunit - Method IsValidPhoneNumber - NamedType AccessKey</note>
-        </trans-unit>
         <trans-unit id="Page 2672347858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cat Fact</source>
           <note from="Developer" annotates="general" priority="2"></note>
