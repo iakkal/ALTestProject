@@ -1,15 +1,12 @@
 codeunit 50101 "Testing Codeunit"
 {
-    Subtype = TestRunner;
+    Subtype = Test;
 
-    trigger OnBeforeTestRun(CodeunitId: Integer; CodeunitName: Text; FunctionName: Text; Permissions: TestPermissions): Boolean
+    trigger OnRun()
     begin
-    end;
-
-    trigger OnAfterTestRun(CodeunitId: Integer; CodeunitName: Text; FunctionName: Text; Permissions: TestPermissions; Success: Boolean)
-    begin
-        if TestCatFact.GetCatFact.Value <> '' then
-            Success := true;
+        TestCatFact.OpenView();
+        if TestCatFact.GetCatFact.Value = '' then
+            Error('');
     end;
 
     var
