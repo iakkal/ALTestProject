@@ -6,7 +6,7 @@ codeunit 50101 "Testing Codeunit"
     begin
         TestCatFact.OpenView();
         if TestCatFact.GetCatFact.Value = '' then
-            Error('');
+            Error('Cat Fact Not found');
     end;
 
     var
