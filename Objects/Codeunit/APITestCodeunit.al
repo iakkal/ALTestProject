@@ -1,8 +1,7 @@
 codeunit 50100 APITestCodeunit
 {
-    trigger OnRun()
-    begin
-    end;
+    var
+        AccessKeySetup: Record "Access Key Setup";
 
     procedure IsValidPhoneNumber(PhoneNumber: Text): Boolean
     var
@@ -12,8 +11,7 @@ codeunit 50100 APITestCodeunit
         Response: Text;
         ResultVariant: Variant;
     begin
-        GetAccessKey();
-        if HttpClient.Get('https://apilayer.net/api/validate?access_key=' + AccessKeySetup."Access Key" + '&number=' + PhoneNumber + '&country_code=&format=1',
+        if HttpClient.Get('https://apilayer.net/api/validate?access_key=' + GetAccessKey() + '&number=' + PhoneNumber + '&country_code=&format=1',
             HttpResponseMessage) then begin
             HttpResponseMessage.Content.ReadAs(Response);
             JsonManagement.InitializeObject(Response);
@@ -41,12 +39,10 @@ codeunit 50100 APITestCodeunit
             Message('Status Code : %1\Reason : %2', HttpResponseMessage.HttpStatusCode, HttpResponseMessage.ReasonPhrase);
     end;
 
-    local procedure GetAccessKey()
+    procedure GetAccessKey(): Text
     begin
         if AccessKeySetup.IsEmpty() then
-            AccessKeySetup.Get()
+            AccessKeySetup.Get();
+        exit(AccessKeySetup."Access Key");
     end;
-
-    var
-        AccessKeySetup: Record "Access Key Setup";
 }
