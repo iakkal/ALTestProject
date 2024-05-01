@@ -18,10 +18,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Access Key Setup - Field Primary Key - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 1172425519 - Method 88859964 - NamedType 4165234317" size-unit="char" translate="yes" xml:space="preserve">
-          <source>https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amp;amount=1</source>
+        <trans-unit id="Codeunit 1172425519 - NamedType 2059084796" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Code : %1\Reason : %2</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit APITestCodeunit - Method GetCatFact - NamedType Url</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit APITestCodeunit - NamedType APIResponseMessage</note>
+        </trans-unit>
+        <trans-unit id="Page 735970624 - Control 398659549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accessing Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Access Key Setup - Control Access Key - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2672347858 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cat Fact</source>
@@ -32,6 +37,56 @@
           <source>Cat Fact</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cat Fact - Control GetCatFact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Sales price Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - RequestPage RequestOptionsPage - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - RequestPage 2516438534 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Sales price Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - RequestPage RequestOptionsPage - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 1324152883 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Criterias</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control Properties - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 1729866901 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjustment Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control AdjustmentAmount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 2985461054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjustment Factor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control Adjustmentfactor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 1383905037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control Default - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 3776108606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control PriceGroup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 1697793279 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control SourceFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 3996861631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control SourceType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1375496715 - Action 2002435380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Export Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Extension - Action Export Customer - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1375496715 - Action 2676113550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Validate Phone</source>

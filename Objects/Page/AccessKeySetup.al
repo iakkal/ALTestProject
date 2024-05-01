@@ -13,6 +13,7 @@ page 50100 "Access Key Setup"
             {
                 field("Access Key"; AccessKey)
                 {
+                    Caption = 'Accessing Key';
                     ApplicationArea = All;
 
                     trigger OnValidate()
@@ -28,10 +29,21 @@ page 50100 "Access Key Setup"
     trigger OnAfterGetCurrRecord()
     begin
         IsolatedStorage.Set(Rec."Primary Key", Rec."Access Key");
-        IsolatedStorage.SetEncrypted(Rec."Primary Key", Rec."Access Key");
+        //IsolatedStorage.SetEncrypted(Rec."Primary Key", Rec."Access Key");
         IsolatedStorage.Get(Rec."Primary Key", AccessKey);
+    end;
+
+    trigger OnOpenPage()
+    begin
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+        xAccessKeySetup := Rec;
     end;
 
     var
         AccessKey: Text;
+        xAccessKeySetup: Record "Access Key Setup";
 }

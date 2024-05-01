@@ -4,6 +4,7 @@ codeunit 50100 APITestCodeunit
         AccessKeySetup: Record "Access Key Setup";
         AccessKey: Text;
         AccessKeyRead: Boolean;
+        APIResponseMessage: Label 'Status Code : %1\Reason : %2';
 
     procedure IsValidPhoneNumber(PhoneNumber: Text): Boolean
     var
@@ -21,14 +22,14 @@ codeunit 50100 APITestCodeunit
             JsonManagement.GetPropertyValueByName('valid', ResultVariant);
             exit(ResultVariant.IsBoolean());
         end else
-            Message('Status Code : %1\Reason : %2', HttpResponseMessage.HttpStatusCode, HttpResponseMessage.ReasonPhrase);
+            Message(APIResponseMessage, HttpResponseMessage.HttpStatusCode, HttpResponseMessage.ReasonPhrase);
     end;
 
     procedure GetCatFact(): Text
     var
         HttpClient: HttpClient;
         HttpResponseMessage: HttpResponseMessage;
-        Url: Label 'https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1';
+        Url: Label 'https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1', Locked = true;
         Response: Text;
         JsonManagement: Codeunit "JSON Management";
         ResultVariant: Variant;
@@ -39,10 +40,10 @@ codeunit 50100 APITestCodeunit
             JsonManagement.GetPropertyValueByName('text', ResultVariant);
             exit(Format(ResultVariant));
         end else
-            Message('Status Code : %1\Reason : %2', HttpResponseMessage.HttpStatusCode, HttpResponseMessage.ReasonPhrase);
+            Message(APIResponseMessage, HttpResponseMessage.HttpStatusCode, HttpResponseMessage.ReasonPhrase);
     end;
 
-    procedure GetAccessKey()
+    local procedure GetAccessKey()
     begin
         if AccessKeyRead then
             exit;
