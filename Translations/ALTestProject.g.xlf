@@ -38,6 +38,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Cat Fact - Control GetCatFact - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3958124403 - NamedType 3031965129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You should choose at least one adjustment method</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - NamedType AdjustmentError</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - NamedType 4101527540" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please choose Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - NamedType PriceListHeaderError</note>
+        </trans-unit>
         <trans-unit id="Report 3958124403 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
           <source>Update Sales price Lines</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -68,10 +78,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control Default - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 3958124403 - Control 3776108606 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Report 3958124403 - Control 3436443959 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Price Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control PriceGroup - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control PriceGroupG - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3958124403 - Control 1078644086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control PriceListCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 3958124403 - Control 1697793279 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Source Filter</source>
@@ -83,15 +98,55 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Update Sales price Lines - Control SourceType - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1375496715 - Action 2002435380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
-          <source>Export Customer</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Extension - Action Export Customer - Property Caption</note>
-        </trans-unit>
         <trans-unit id="PageExtension 1375496715 - Action 2676113550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
           <source>Validate Phone</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer Card Extension - Action Validate Phone - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2507260909 - Action 3427587027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 881164414">
+          <source>Update Sales Price Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Price List Lines - Action Update Sales Price Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2154487406 - Action 3427587027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 295059669">
+          <source>Update Sales Price Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Price Worksheet - Action Update Sales Price Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2857612872 - Action 3427587027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Update Sales Price Lines</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Purchase Order - Action Update Sales Price Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 901929676 - Field 2243915294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
+          <source>Price Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Price List Line - Field Price Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3812031640 - Field 2243915294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2977964999">
+          <source>Price Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Price Worksheet Line - Field Price Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3812031640 - Field 1047571886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2977964999">
+          <source>Update Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Price Worksheet Line - Field Update Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2243915294 - EnumValue 3958843921 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Retail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Price Group - EnumValue Retail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2243915294 - EnumValue 4182301777 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VIP</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Price Group - EnumValue VIP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2243915294 - EnumValue 1678565619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Wholesales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Price Group - EnumValue Wholesales - Property Caption</note>
         </trans-unit>
       </group>
     </body>
