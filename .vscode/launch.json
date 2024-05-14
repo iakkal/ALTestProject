@@ -2,24 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach: Your own server",
-            "type": "al",
-            "request": "attach",
-            "environmentType": "OnPrem",
-            "server": "http://bcserver",
-            "serverInstance": "BC",
-            "authentication": "UserPassword",
-            "breakOnError": "All",
-            "breakOnRecordWrite": "None",
-            "enableSqlInformationDebugger": true,
-            "enableLongRunningSqlStatements": true,
-            "longRunningSqlStatementsThreshold": 500,
-            "numberOfSqlStatements": 10,
-            "breakOnNext": "WebServiceClient",
-            "tenant": "default",
-            "sessionId": 10
-        },
-        {
             "name": "Your own server",
             "request": "launch",
             "type": "al",
@@ -27,15 +9,13 @@
             "server": "http://bcserver",
             "serverInstance": "BC",
             "authentication": "UserPassword",
-            "startupObjectId": 50100,
-            "startupObjectType": "Report",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
             "tenant": "default",
             "usePublicURLFromServer": true,
-            "schemaUpdateMode": "Synchronize"
+            "schemaUpdateMode": "ForceSync"
         }
     ]
 }
